@@ -5,6 +5,22 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 
+.config(function ($stateProvider, $urlRouterProvider) {
+  $stateProvider
+    .state('login', {
+      url: '/login',
+      templateUrl: 'views/login/login.html',
+      controller: 'LoginCtrl'
+    })
+    .state('home', {
+      url: '/',
+      templateUrl: 'views/home/home.html',
+      controller: 'HomeCtrl'
+    });
+
+  $urlRouterProvider.otherwise('/');
+})
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
