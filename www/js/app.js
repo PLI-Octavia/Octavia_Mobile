@@ -12,10 +12,10 @@ var app = angular.module('starter', ['ionic'])
       templateUrl: 'views/login/login.html',
       controller: 'LoginCtrl'
     })
-    .state('home', {
-      url: '/',
-      templateUrl: 'views/home/home.html',
-      controller: 'HomeCtrl'
+    .state('game', {
+      url: '/game/list',
+      templateUrl: 'views/game/list.html',
+      controller: 'GameListCtrl'
     });
 
   $urlRouterProvider.otherwise('/login');
