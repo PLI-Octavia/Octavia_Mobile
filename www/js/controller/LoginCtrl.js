@@ -1,14 +1,26 @@
-app.controller('LoginCtrl', ['$scope','$http' , '$location', function($scope, $http, $location) {
+app.controller('LoginCtrl', ['$scope','$http' , '$location', '$rootScope', function($scope, $http, $location, $rootScope) {
 
 $scope.symbols = ['square', 'circle', 'tri', 'cross'];
-$scope.symbolsPassword = [];
+$scope.passwordSymbols = [];
+var tmp = "http://46.105.123.11/login/student";
+//var tmp = "http://46.105.123.11/score/student/2";
 
 $scope.addSymbol = function (symbol) {
-		$scope.symbolsPassword.push(symbol);
+		$scope.passwordSymbols.push(symbol);
 };
 
 $scope.removeSymbol = function (index) {
-		$scope.symbolsPassword.splice(index, 1);
+		$scope.passwordSymbols.splice(index, 1);
 };
 
+$scope.validation = function (user) {
+	data = {
+		user_login : user.login,
+		user_password : $scope.passwordSymbols.join('-')		
+	}
+	$http.post(tmp, data).then(function (data) {
+      $rootScope.user = data.data.data
+      console.log($rootScope.user)
+    });
+}
 }]);

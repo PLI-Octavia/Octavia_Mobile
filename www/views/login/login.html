@@ -21,13 +21,13 @@
 
 	<div class="row">
 		<div style="margin-left:auto;margin-right:auto;"  class="container">
-			<span ng-repeat="symbol in symbolsPassword track by $index" ng-class="'shape shape-' + symbol" ng-click="removeSymbol($index)"></span/>
+			<span ng-repeat="symbol in passwordSymbols track by $index" ng-class="'shape shape-' + symbol" ng-click="removeSymbol($index)"></span/>
 		</div>
 	</div>
 
 	<div class="row">
 		<div style="margin-left:auto;margin-right:auto;"class="container padding">
-			<button style="width: 250px;" class="button submit" ng-click="validation(user)">Connexion</button>
+			<button style="width: 250px;" class="button submit">Connexion</button>
 		</div>
 	</div>
 </form>
