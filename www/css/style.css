@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+body {
+	font-family: 'Annie Use Your Telescope', cursive;
+}
+
+h1 {
+	font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.topbar {
+	background-color: #92d36e !important;
+}
+.pane {
+	background-color: #ffc581;
+}
+
+.labelform {
+	background-color: #fefce0;
+}
+
+.submit {
+	background-color: #92d36e;
+}

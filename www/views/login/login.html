@@ -1,10 +1,24 @@
-<div class="list list-inset">
-  <label class="item item-input">
-  <span class="input-label">Ecris ton nom de famille</span>
-    <input type="text" placeholder="Nom">
-  </label>
-  <label class="item item-input">
-  <span class="input-label">First Name</span>
-    <input type="text" placeholder="Mot de passe">
-  </label>
-</div>
+<ion-view view-title="Octvia">
+<br><br><br>
+<form class="list" ng-submit="validation(user)">
+	<p>Ecrit ton nom de famille</p>
+	<label class="item item-input labelform">
+		<input type="text" placeholder="Nom de famille" ng-model="user"></input>
+	</label>
+	<p>Tape ton mot de passe</p>
+	<div>
+		<img ng-src="img/cross.png">
+		<img ng-src="img/circle.png">
+		<img ng-src="img/tri.png">
+		<img ng-src="img/square.png">
+	</div>
+	<label class="item item-input labelform">
+		<input type="password" placeholder="Mot de Passe" ng-model="user"></input>
+	</label>
+	<div class="padding">
+		<button class="button button-block submit">Connexion</div>
+	</div>
+	</div>
+</form>
+
+</ion-view>
