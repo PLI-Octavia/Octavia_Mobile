@@ -1,0 +1,11 @@
+<ion-view view-title="Octvia">
+<br><br><br>
+<img src="https://cdn3.iconfinder.com/data/icons/token/128/Power-Shutdown.png">
+<div ng-repeat="game in available_game" class="cards">
+	<div class="item item-text-wrap" >
+	<img ng-src="http://46.105.123.11/{{ game.game_name }}.png">
+{{ game.game_name }}
+	<button ng-click="launchGame(game.game_name)">Jouons</button>
+	</div>
+</div>
+</ion-view>

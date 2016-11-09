@@ -1,0 +1,35 @@
+<ion-view view-title="Octvia">
+<br><br><br>
+<form class="list" ng-submit="validation(user)">
+	<h3 class="text-center">Ecrit ton nom de famille</h3>
+	
+	<div class="row">	
+	  <div style="margin-left:auto;margin-right:auto;" class="container">	
+		<label style="width: 246px;" class="item item-input labelform">
+			<input type="text" placeholder="Nom de famille" ng-model="user.login"></input>
+		</label>
+	  </div>
+	</div>
+
+	<h3 class="text-center">Tape ton mot de passe</h3>
+	<div class="row">
+		<div style="margin-left:auto;margin-right:auto;"  class="container">
+			<span ng-repeat="symbol in symbols" ng-class="'shape shape-' + symbol" ng-click="addSymbol(symbol)"></span>
+		</div>
+	</div>
+	<h3 class="text-center">Votre mot de pass</h3>
+
+	<div class="row">
+		<div style="margin-left:auto;margin-right:auto;"  class="container">
+			<span ng-repeat="symbol in passwordSymbols track by $index" ng-class="'shape shape-' + symbol" ng-click="removeSymbol($index)"></span/>
+		</div>
+	</div>
+
+	<div class="row">
+		<div style="margin-left:auto;margin-right:auto;"class="container padding">
+			<button style="width: 250px;" class="button submit">Connexion</button>
+		</div>
+	</div>
+</form>
+
+</ion-view>

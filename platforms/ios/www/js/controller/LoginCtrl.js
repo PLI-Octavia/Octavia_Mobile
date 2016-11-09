@@ -14,7 +14,7 @@ $scope.removeSymbol = function (index) {
 };
 
 $scope.validation = function (user) {
-	var data = {
+	data = {
 		user_login : user.login,
 		user_password : $scope.passwordSymbols.join('-')		
 	}

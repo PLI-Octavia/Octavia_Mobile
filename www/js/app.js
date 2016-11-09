@@ -8,14 +8,23 @@ var app = angular.module('starter', ['ionic'])
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('login', {
+      cache: false,
       url: '/login',
       templateUrl: 'views/login/login.html',
       controller: 'LoginCtrl'
     })
     .state('game', {
+      cache: false,
       url: '/game/list',
       templateUrl: 'views/game/list.html',
       controller: 'GameListCtrl'
+    })
+    .state('play', {
+      cache: false,
+      url: '/game/play',
+      params: { 'game' : null},
+      templateUrl: 'views/game/play.html',
+      controller: 'GamePlayCtrl'
     });
 
   $urlRouterProvider.otherwise('/login');

@@ -1,1 +1,45 @@
 /* Empty. Add your own CSS if you like */
+body {
+	font-family: 'Annie Use Your Telescope', cursive;
+}
+
+h1, h3{
+	font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.topbar {
+	background-color: #92d36e !important;
+}
+.pane {
+	background-color: #ffc581;
+}
+
+.labelform {
+	background-color: #fefce0;
+}
+
+.submit {
+	background-color: #92d36e;
+}
+
+.shape {
+	font-size: 3em;
+}
+
+.shape-square:after {
+	color: green;
+	content: url(http://imgur.com/ncfLkBw.png);
+}
+.shape-circle:after {
+	color: red;
+	content: url(http://imgur.com/7QoCYeO.png);
+}
+.shape-tri:after {
+	color: yellow;
+	content: url(http://imgur.com/3R24up1.png);
+}
+
+.shape-cross:after {
+	color: yellow;
+	content: url(http://imgur.com/vpCSvMs.png);
+}
