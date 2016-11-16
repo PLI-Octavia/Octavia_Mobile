@@ -43,3 +43,9 @@ h1, h3{
 	color: yellow;
 	content: url(http://imgur.com/vpCSvMs.png);
 }
+
+.gameIframe {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
