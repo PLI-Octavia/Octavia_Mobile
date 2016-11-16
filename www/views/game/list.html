@@ -3,10 +3,11 @@
 <img style="display: none;" src="https://cdn3.iconfinder.com/data/icons/token/128/Power-Shutdown.png">
 	<div class="row">
 		<div class="col">
-			<div ng-repeat="game in available_game" class=" list">
-				<div style="background: rgba(23, 21, 18, 0.61);" class="item item-button-right">
-				 <img  style="" ng-src="http://46.105.123.11/{{ game.game_name }}.png"> 
-				 	<p class="" style=" color:white;">{{ game.game_name }}</p>	
+			<div style="" ng-repeat="game in available_game" class=" list">
+				<div style="background: url('https://pi.tedcdn.com/r/pf.tedcdn.com/images/playlists/hated_math_1200x627.jpg?c=1050%2C550&w=1050');" class="item item-button-right">
+				<h1 style=" color:white; ">{{ game.game_name }}</h1>	
+				 <!-- <img  style="" ng-src="http://46.105.123.11/{{ game.game_name }}.png">  -->
+				 	
 				 
 					<button  class="button button-positive"  ng-click="launchGame(game.game_name)">Jouons</button>
 				
