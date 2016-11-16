@@ -1,15 +1,18 @@
 <ion-view view-title="Octvia">
 <br><br><br>
-<div class="row row-center">
-	<div class="col ">
-		<img style="display: none;" src="https://cdn3.iconfinder.com/data/icons/token/128/Power-Shutdown.png">
-		<div ng-repeat="game in available_game" class="cards">
-			<div style="    background: rgba(23, 21, 18, 0.61);"class="item item-text-wrap" >
-			<img style="    width: 150px;" ng-src="http://46.105.123.11/{{ game.game_name }}.png">
-			 <h1 style="position: absolute;margin-left: 40%;top: 0;">{{ game.game_name }}</p>	
-			<button style="float: right;" ng-click="launchGame(game.game_name)">Jouons</button>
+<img style="display: none;" src="https://cdn3.iconfinder.com/data/icons/token/128/Power-Shutdown.png">
+	<div class="row">
+		<div class="col">
+			<div ng-repeat="game in available_game" class=" list">
+				<div style="background: rgba(23, 21, 18, 0.61);" class="item item-button-right">
+				 <img  style="" ng-src="http://46.105.123.11/{{ game.game_name }}.png"> 
+				 	<p class="" style=" color:white;">{{ game.game_name }}</p>	
+				 
+					<button  class="button button-positive"  ng-click="launchGame(game.game_name)">Jouons</button>
+				
+				</div>
+				
 			</div>
 		</div>
-	</div>
-</div>
+	</div>	
 </ion-view>
