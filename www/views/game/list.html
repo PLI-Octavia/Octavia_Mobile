@@ -4,12 +4,10 @@
 	<div class="row">
 		<div class="col">
 			<div style="" ng-repeat="game in available_game" class=" list">
-				<div style="background: url('https://pi.tedcdn.com/r/pf.tedcdn.com/images/playlists/hated_math_1200x627.jpg?c=1050%2C550&w=1050');" class="item item-button-right">
-				<h1 style=" color:white; ">{{ game.game_name }}</h1>	
+				<div style="background-color:#66421d; border:none" class="item item-button-right">
+				<h1 style=" color:black; ">{{ game.game_name }}</h1>	
 				 <!-- <img  style="" ng-src="http://46.105.123.11/{{ game.game_name }}.png">  -->
-				 	
-				 
-					<button  class="button button-positive"  ng-click="launchGame(game.game_name)">Jouons</button>
+					<button  style="margin-top:15px" class="button button-balanced"  ng-click="launchGame(game.game_name)">Jouons</button>
 				
 				</div>
 				
@@ -17,3 +15,6 @@
 		</div>
 	</div>	
 </ion-view>
+
+<script type="text/javascript">
+</script>>
